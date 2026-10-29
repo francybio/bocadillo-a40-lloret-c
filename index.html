@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bocadillo A40 de Tánger · Lloret de Mar</title>
+<meta name="description" content="Bocadillos de Tánger en Lloret de Mar: kefta, pollo marinado, gambas, sepia y más, todo halal y hecho al momento. Carrer del Rector Coch, 1-3. De martes a domingo, de 12 a 24 h.">
+<meta name="theme-color" content="#1E6B4E">
+<meta property="og:title" content="Bocadillo A40 de Tánger · Lloret de Mar">
+<meta property="og:description" content="Bocadillos de Tánger, halal y hechos al momento. Martes a domingo, de 12 a 24 h.">
+<meta property="og:image" content="assets/img/fachada.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M8 62V30a24 24 0 0 1 48 0v32z' fill='%231E6B4E'/%3E%3Ctext x='32' y='48' font-family='Arial' font-weight='700' font-size='20' fill='%23fff' text-anchor='middle'%3EA40%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marhey:wght@400;600;700&family=Rubik:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="crown" viewBox="0 0 64 44"><path d="M4 14l14 12L32 4l14 22 14-12-6 24H10z" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linejoin="round"/><path d="M10 40h44" stroke="currentColor" stroke-width="3.6" stroke-linecap="round"/></symbol>
+  </defs>
+</svg>
+
+<header class="top" id="top">
+  <a class="brand" href="#inicio" aria-label="Bocadillo A40 de Tánger">
+    <span class="brand__door"><svg aria-hidden="true"><use href="#crown"/></svg></span>
+    <span class="brand__t"><b><i>A</i>40</b><small>de Tánger</small></span>
+  </a>
+  <nav class="top__nav" data-ta="aria-label:nav.label" aria-label="Secciones">
+    <a href="#bocadillos" data-t="nav.boc">Bocadillos</a>
+    <a href="#carta" data-t="nav.carta">Carta</a>
+    <a href="#fotos" data-t="nav.fotos">Fotos</a>
+    <a href="#donde" data-t="nav.donde">Dónde</a>
+  </nav>
+  <div class="lang" data-lang></div>
+  <a class="top__call" href="tel:+34601864897"><span data-t="call">Llamar</span></a>
+</header>
+
+<main>
+
+<!-- ============ INICIO ============ -->
+<section class="hero" id="inicio">
+  <div class="hero__txt">
+    <p class="chips"><span data-t="hero.chip">Comida callejera de Tánger</span><span class="chip--red">Halal · حلال</span></p>
+    <h1 data-t="hero.h1">Bocadillos de Tánger <em>en Lloret de Mar.</em></h1>
+    <p class="hero__p" data-t="hero.p">Frescos, generosos y hechos al momento, con la salsa de la casa. En el Carrer del Rector Coch, a dos pasos del centro.</p>
+    <div class="hero__btns">
+      <a class="btn btn--green" href="#bocadillos" data-t="hero.b1">Ver los bocadillos</a>
+      <a class="btn btn--line" href="tel:+34601864897"><span data-t="hero.b2">Pedir por teléfono</span> <b dir="ltr">601 86 48 97</b></a>
+    </div>
+    <ul class="hero__facts">
+      <li class="live" data-live><i></i><span data-live-text>Horario</span></li>
+      <li><b>★ 5,0</b> <span data-t="hero.g">en Google</span></li>
+    </ul>
+  </div>
+  <figure class="hero__door">
+    <div class="door"><img src="assets/img/fachada.jpg" data-ta="alt:hero.alt" alt="La puerta de Bocadillo A40 con su rótulo de neón" fetchpriority="high"></div>
+    <span class="sticker" aria-hidden="true"><b>A40</b><small>حلال · HALAL</small></span>
+  </figure>
+</section>
+
+<div class="band" aria-hidden="true"></div>
+
+<!-- ============ BOCADILLOS ============ -->
+<section class="boc" id="bocadillos">
+  <div class="head">
+    <h2 data-t="boc.h2">Los bocadillos</h2>
+    <p data-t="boc.p">Todos en barra y con la salsa de la casa. Toca uno para ver qué lleva.</p>
+  </div>
+  <div class="filters" id="filters" role="group" data-ta="aria-label:boc.filter" aria-label="Filtrar"></div>
+  <ul class="cards" id="cards"></ul>
+  <p class="boc__tip" data-t="boc.tip">¿Estilo Tánger? En el mostrador puedes añadir huevo duro, aceitunas, maíz, remolacha, zanahoria o cebolla morada.</p>
+</section>
+
+<!-- ============ CARTA ============ -->
+<section class="carta" id="carta">
+  <div class="head">
+    <h2 data-t="carta.h2">La carta</h2>
+    <p data-t="carta.p">Precios de la carta publicada en Google, IVA incluido.</p>
+  </div>
+  <div class="carta__card">
+    <div class="tabs" id="tabs" role="tablist" data-ta="aria-label:carta.h2" aria-label="La carta"></div>
+    <div class="panel" id="panel" role="tabpanel">
+      <p class="panel__sub" id="panelSub"></p>
+      <ul class="panel__list" id="panelList"></ul>
+    </div>
+  </div>
+  <button class="link" type="button" id="openCarta" data-t="carta.print">Ver la carta impresa</button>
+</section>
+
+<div class="band" aria-hidden="true"></div>
+
+<!-- ============ FOTOS ============ -->
+<section class="fotos" id="fotos">
+  <div class="head head--row">
+    <div>
+      <h2 data-t="fotos.h2">El local</h2>
+      <p data-t="fotos.p">Pequeño, limpio y pintado a mano.</p>
+    </div>
+    <div class="arrows" dir="ltr">
+      <button type="button" id="fPrev" data-ta="aria-label:fotos.prev" aria-label="Anterior">←</button>
+      <button type="button" id="fNext" data-ta="aria-label:fotos.next" aria-label="Siguiente">→</button>
+    </div>
+  </div>
+  <ul class="strip" id="strip" dir="ltr"></ul>
+</section>
+
+<!-- ============ VÍDEOS ============ -->
+<section class="vids">
+  <div class="head">
+    <h2 data-t="vids.h2">Un vistazo</h2>
+  </div>
+  <div class="vids__row">
+    <figure class="vid"><div class="vid__arch"><video muted loop playsinline preload="none" poster="assets/video/puerta.jpg" data-src="assets/video/puerta.mp4"></video></div><figcaption data-t="vids.1">La puerta</figcaption></figure>
+    <figure class="vid"><div class="vid__arch"><video muted loop playsinline preload="none" poster="assets/video/mural.jpg" data-src="assets/video/mural.mp4"></video></div><figcaption data-t="vids.2">El mural</figcaption></figure>
+  </div>
+</section>
+
+<!-- ============ OPINIONES ============ -->
+<section class="ops">
+  <p class="ops__score"><b>5,0</b> <span>★★★★★</span> <small data-t="ops.n">8 reseñas en Google</small></p>
+  <div class="ops__row">
+    <blockquote data-t="op.1"><p>«El mejor sitio de bocadillos de Lloret con diferencia.»</p><cite>Angeles</cite></blockquote>
+    <blockquote data-t="op.2"><p>«Todo muy limpio, se nota que la comida es de buena calidad.»</p><cite>Gerard</cite></blockquote>
+    <blockquote data-t="op.3"><p>«Súper bueno todo, mucha limpieza y muy amables al atenderte.»</p><cite>Jesús</cite></blockquote>
+  </div>
+</section>
+
+<!-- ============ DÓNDE ============ -->
+<section class="donde" id="donde">
+  <div class="donde__info">
+    <h2 data-t="donde.h2">Dónde estamos</h2>
+    <address dir="ltr">Carrer del Rector Coch, 1-3<br>17310 Lloret de Mar</address>
+    <ul class="donde__list">
+      <li><span data-t="donde.days">Martes a domingo</span><b dir="ltr">12:00 – 24:00</b></li>
+      <li><span data-t="donde.mon">Lunes</span><b data-t="closed">Cerrado</b></li>
+      <li><span data-t="tel.orders">Pedidos</span><a href="tel:+34601864897" dir="ltr">601 86 48 97</a></li>
+      <li><span data-t="tel.shop">Local</span><a href="tel:+34631878422" dir="ltr">631 87 84 22</a></li>
+    </ul>
+    <div class="hero__btns">
+      <a class="btn btn--green" href="https://www.google.com/maps/dir/?api=1&destination=Bocadillo%20A40%2C%20Carrer%20del%20Rector%20Coch%201%2C%20Lloret%20de%20Mar" target="_blank" rel="noopener" data-t="donde.go">Cómo llegar</a>
+      <a class="btn btn--line" href="tel:+34601864897" data-t="call">Llamar</a>
+    </div>
+  </div>
+  <div class="donde__map"><iframe data-ta="title:donde.map" title="Mapa: Bocadillo A40, Lloret de Mar" src="https://maps.google.com/maps?q=Bocadillo%20A40%2C%20Carrer%20del%20Rector%20Coch%201-3%2C%20Lloret%20de%20Mar&z=17&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+</section>
+
+</main>
+
+<footer class="pie">
+  <div class="band" aria-hidden="true"></div>
+  <div class="pie__in">
+    <p class="pie__brand"><b><i>A</i>40</b> Bocadillo de Tánger</p>
+    <p class="pie__alt"><span data-t="foot.me">Propuesta C «Puerta verde»</span> · <a data-keep-lang href="../bocadillo-a40-lloret/" data-t="foot.a">Propuesta A «Riad»</a> · <a data-keep-lang href="../bocadillo-a40-lloret-b/" data-t="foot.b">Propuesta B «Medina de noche»</a></p>
+  </div>
+</footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Imagen ampliada" hidden>
+  <figure><img id="lbImg" alt=""><figcaption id="lbCap"></figcaption></figure>
+  <button class="lb__x" type="button" data-ta="aria-label:lb.close" aria-label="Cerrar">×</button>
+</div>
+
+<script src="datos.js"></script>
+<script src="i18n.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
